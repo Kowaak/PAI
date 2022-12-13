@@ -1,0 +1,9 @@
+fieldset {
+    border-color: black;
+}
+body {
+    background-color: gainsboro;
+}
+h3,h2 {
+    text-align: center;
+}

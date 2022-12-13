@@ -1,0 +1,68 @@
+header{
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+}
+body{
+    background-color: darkgray;
+    text-align: center;
+}
+footer{
+    background-color: gray;
+    text-align: right;
+    width: 100%;
+}
+aside{
+    background-color: gray;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+table{
+    border: 3px solid black;
+    height: 100%;
+}
+tr,td,th {
+    border: 1px solid black;
+}
+article {
+    background-color: darkgray;
+    width: 75%;
+    height: 300px;
+    float: right;
+    font-size: large;
+}
+a {
+    color: black;
+}
+main {
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+}
+#war1, #war2, #war3 {
+    width: 4%;
+    background-color: darkgray;
+}
+input {
+    background-color: darkgray;
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: red;
+}
+select {
+    background-color: darkgray;
+}
+#przycisk {
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: gray;
+    padding: 14px 40px;
+}
+#wyd, #wyd2, #kal {
+    width: 20%;
+}

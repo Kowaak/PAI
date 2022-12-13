@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script language="javascript" src="JS/js.js"></script>
+    <title>Formularz z zapisem do pliku</title>
+</head>
+<body>
+    <header><h1>Formularz z zapisem do pliku</h1></header>
+    <fieldset>
+    <form name="a" method="post" action="php/pliki.php" onkeydown="return event.key != 'Enter';">
+        <input type="text" pattern="^[a-zA-ZąężłźćóĄĘŻŁŹĆÓ]+$" name="imie" placeholder="Imie"><br>
+        <input type="text" pattern="^[a-zA-ZąężłźćóĄĘŻŁŹĆÓ]+$" name="nazwisko" placeholder="Nazwisko"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        Płeć:<br>
+        <input type="radio" value="K" name="plec" >Kobieta<br>
+        <input type="radio" value="M" name="plec">Mężczyzna<br>
+        <input type="tel" pattern="^[0-9\-\+]{9,15}$" value="" name="tel" placeholder="Telefon (opcjonalny)" ><br>
+        <input type="date" min="1930-01-01" max="2022-10-31" name="data">Data ur. <br>
+        <select name="hobby" id="hobby">
+            <option value=0 disabled selected hidden>Wybierz hobby</option>
+            <option value="Programowanie 1">Programowanie 1</option>
+            <option value="Programowanie 2">Programowanie 2</option>
+            <option value="Programowanie 3">Programowanie 3</option>
+        </select><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <input id="przycisk" type="submit" value="Wyślij i pokaż plik" onmouseover="validacja()">
+    <!--  <input type="button" onclick="odczytaj()">             -->
+    </form>
+    </fieldset>
+    <footer>Autor: <a href="https://github.com/Kowaak">Filip Załęcki</a><br>Wszelkie prawa zastrzeżone</footer>
+</body>
+</html>

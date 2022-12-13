@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ogrzewanie</title>
+</head>
+<body>
+    <!-- Aplikacja która porówna koszty ogrzewania używając różnych typów paliw dostępnych na rynku-->
+    <header><h1>Obliczanie i porównywanie kosztu ogrzewania</h1></header>
+    <main>
+    <aside>
+        <table>
+            <tr>
+                <th>Rodzaj paliwa</th>       
+                <th>Zawartość energii [MJ]</th>
+            </tr>
+            <tr>
+                <td>1 kg węgla kamiennego</td> 
+                <td>24,5-33,8</td>
+            </tr>
+            <tr>
+                <td>1 kg węgla brunatnego</td>
+                <td>7-21</td>
+            </tr>
+            <tr>
+                <td>1 kg oleju opałowego</td>
+                <td>43,2</td>
+            </tr>
+            <tr>
+                <td>1 l oleju opałowego</td>
+                <td>38,8</td>
+            </tr>
+            <tr>
+                <td>1 m3 gazu ziemnego</td>    
+                <td>34,4</td>
+            </tr>
+            <tr>
+                <td>1 kg mieszanki LPG</td>   
+                <td>43,5</td>
+            </tr>
+            <tr>
+                <td>1 l mieszanki LPG</td>    
+                <td>25,02</td>
+            </tr>
+            <tr>
+                <td>1 kg drewna</td>            
+                <td>18</td>
+            </tr>
+        </table>
+    </aside>
+    <article>
+        <form method="POST">
+        Rodzaj paliwa:
+        <select>
+            <option>Węgiel kamienny</option>
+            <option>Węgiel brunatny</option>
+            <option>Olej opałowy </option>
+            <option>Gaz ziemny</option>
+            <option>Mieszanka LPG</option>
+            <option>Drewno</option>
+            <option>Prond</option>
+        </select><br>
+        <input type="text" placeholder="Ilość (kg, m3, l)">
+        <input type="text" placeholder="Cena"> = 
+        <input type="text" placeholder="Cena"> zł na rok
+        <input type="range" min="" max="">
+        </form>
+    </article>
+    </main>
+    <footer>Autor: <a href="https://github.com/Kowaak">Kowaak</a></footer>
+</body>
+</html>
