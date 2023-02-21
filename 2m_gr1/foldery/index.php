@@ -19,12 +19,17 @@
     for($i = 2;$i<=10;$i++){
         fopen("xyz23/abc2/abc$i.txt", "w");
     } //utworzenie plikow w xyz23/abc2/
-    $a = scandir("xyz13");
-    $b = scandir("xyz23");
+    $a = scandir("xyz13/abc1",1);
+    $b = scandir("xyz23/abc2",1);
     print_r("Folder xyz13: <br>"); //wyswietlenie zawartosci folderow
     print_r($a);
-    print_r("Folder xyz23: <br>");
+    print_r("<br>Folder xyz23: <br>");
     print_r($b);
+
+    //Nazwa pliku po sciezce do niego 
+    $path = '/xyz23/abc2/abc10.txt';
+    printf(' <br> Nazwa pliku: %s <br />', basename($path));
+    printf('Nazwa pliku bez rozszerzenia: %s <br />', basename($path, ".txt"));
     ?>
     
 </body>
