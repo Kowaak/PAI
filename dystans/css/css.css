@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+input::placeholder {
+    font-weight: bold;
+}
+input {
+    background-color: darkgray
+}
+select {
+    background-color: darkgray;
+}
+#przycisk {
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: gray;
+    padding: 14px 40px;
+}
+fieldset {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+a {
+    color: blanchedalmond;
+}

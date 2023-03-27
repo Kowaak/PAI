@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <script language="javascript" src="js/validacja.js"></script>
+    <title>Dystanse</title>
+</head>
+<body>
+<header><h1>Wprowadź dane</h1></header>
+    <fieldset>
+    <form name="a" method="post" action="php/obliczenia.php" onkeydown="return event.key != 'Enter';">
+
+    <!--    <input id="jeden" name="nsr" type="radio" value="1">Północ<br>
+        <input id="jeden" name="nsr" type="radio" value="2">Południe<br>
+        <input id="jeden" name="ewr" type="radio" value="3">Wschód<br>
+        <input id="jeden" name="ewr" type="radio" value="4">Zachód<br> -->
+
+        <input type="text" pattern="^[0-9.]+$" name="NP" placeholder="Północ/Południe"><br>
+        <input type="text" pattern="^[0-9.]+$" name="EW" placeholder="Wschód/Zachód"><br><br>
+
+    <!--    <input id="dwa" name="nsr2" type="radio" value="5">Północ<br>
+        <input id="dwa" name="nsr2" type="radio" value="6">Południe<br>
+        <input id="dwa" name="ewr2" type="radio" value="7">Wschód<br>
+        <input id="dwa" name="ewr2" type="radio" value="8">Zachód<br> -->
+
+        <input type="text" pattern="^[0-9.]+$" name="NP2" placeholder="Północ/Południe"><br>
+        <input type="text" pattern="^[0-9.]+$" name="EW2" placeholder="Wschód/Zachód"><br>
+        
+        <select name="format" id="format">
+            <option value=0 disabled selected hidden>Wybierz format</option>
+            <option value=1>Stopień. część ułamkowa</option>
+            <option value=2>Stopień. minuta. sekunda</option>
+        </select><br><br><br><br>
+        <input id="przycisk" type="submit" value="Oblicz" onmouseover="validacja">
+        <h6>By wstawić współrzędną wschód/południe<br> wpisz ujemne wartości</h6>
+        <h6>Jeśli podajesz dane w formacie SMS musisz podać wszystkie trzy wartości (stopień, minuta, sekunda) nawet jeśli nie chcesz liczyć dokładnie sekund np. 54.22.00</h6>
+    </form>
+    </fieldset>
+    <footer>Wykonał:<a href="https://github.com/Kowaak">Kowaak</a></footer>
+</body>
+</html>
